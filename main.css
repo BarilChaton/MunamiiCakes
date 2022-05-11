@@ -55,10 +55,11 @@
     color: #fff;
 }
 
-#stage {
-    margin: 1em auto;
-    width: 600px;
-    height: 200px
+.slideshow {
+    width: 900px;
+    height: auto;
+    border-radius: 20px;
+    position: absolute;
 }
 
 #stage a {
@@ -66,7 +67,7 @@
 }
 #stage a:nth-of-type(1) {
     animation-name: fader;
-    animation-delay: 3s;
+    animation-delay: 5s;
     animation-duration: 1s;
     z-index: 20;
 }
@@ -86,12 +87,16 @@
 
 .top-rightcol {
     margin-right: 7%;
+    margin-left: 60%;
+    /* margin-top: 1%; */
     background: rgba(255, 255, 255, 1);
     padding-left: 2%;
     padding-right: 2%;
-    padding-top: 2%;
-    padding-bottom: 2%;
+    padding-top: 3%;
+    padding-bottom: 6%;
     border-radius: 20px;
+    position: relative;
+    
 }
 
 .maintitle {

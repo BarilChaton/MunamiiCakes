@@ -22,10 +22,10 @@
 
     <div class="topcontainer">
         <div id="stage">
-            <img class="slideshow" src="Photos\slideshow\bake1.png" alt="Slideshow image">
-            <img class="slideshow" src="Photos\slideshow\bake3.png" alt="Slideshow image">
-            <img class="slideshow" src="Photos\slideshow\bake4.png" alt="Slideshow image">
-            <img class="slideshow" src="Photos\slideshow\bake5.png" alt="Slideshow image">
+            <a><img class="slideshow" src="Photos\slideshow\bake1.png" alt="Slideshow image"></a>
+            <a><img class="slideshow" src="Photos\slideshow\bake3.png" alt="Slideshow image"></a>
+            <a><img class="slideshow" src="Photos\slideshow\bake4.png" alt="Slideshow image"></a>
+            <a><img class="slideshow" src="Photos\slideshow\bake5.png" alt="Slideshow image"></a>
         </div>
         <div class="top-rightcol">
             <h1 class="maintitle">A party without cake is just a meeting.</h1>
@@ -38,3 +38,13 @@
     
 </body>
 </html>
+<script>
+    window.addEventListener("DOMContentLoaded", function(e) {
+    var stage = document.getElementById("stage");
+    var fadeComplete = function(e) { stage.appendChild(arr[0]); };
+    var arr = stage.getElementsByTagName("a");
+    for(var i=0; i < arr.length; i++) {
+        arr[i].addEventListener("animationend", fadeComplete, false);
+    }
+}, false);
+</script>
