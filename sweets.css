@@ -47,7 +47,36 @@ html {
 }
 
 /* this is the main part of the page */
+#column-container {
+    display: flexbox;
+}
 
+.column-left {
+    background: rgba(255, 255, 255, 0.5);
+    color: #fff;
+    display: inline-flex;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 3%;
+    padding-bottom: 36%;
+    margin-top: 8.5%;
+    margin-left: 4%;
+    border-radius: 20px;
+}
+
+.column-right {
+    background: rgba(255, 255, 255, 0.5);
+    color: #fff;
+    display: inline-flex;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 3%;
+    padding-bottom: 36%;
+    margin-top: 8.5%;
+    margin-left: 11.5%;
+    margin-right: 4%;
+    border-radius: 20px;
+}
 
 /* this is footer part */
 .footer {
