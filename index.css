@@ -4,6 +4,57 @@ html {
     scroll-behavior: smooth;
 }
 
+@media only screen and (max-width: 768px) {
+/* for mobile phones */
+body {
+    background-color: pink;
+}
+
+#BckgrVid {
+    display: none;
+}
+
+.topnav {
+    padding-top: em;
+    padding-bottom: 1em;
+    display: inline-block;
+    background-color: white;
+    position: relative;
+    width: 100%;
+    margin-top: 10%;
+    border-radius: 10px;
+}
+
+#toplink {
+    display: inline-block;
+    text-align: center;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-size: 150%;
+    text-decoration: none;
+    background-color: chocolate;
+    color: white;
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 20%;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.MunamiiLogo {
+    float: left;
+    margin-left: auto;
+    margin-top: -20%;
+    border-radius: 100%;
+}
+
+.slideshow {
+    display: none;
+}
+
+}
+
+@media only screen and (min-width: 768px) {
 #BckgrVid {
     position: fixed;
     right: 0;
@@ -53,7 +104,7 @@ html {
     margin-right: 2%;
     padding-left: 2%;
     padding-right: 2%;
-    padding-top: 5%;
+    padding-top: 3%;
     padding-bottom: 5%;
     background: rgba(255, 255, 255, 0.5);
     color: #fff;
@@ -99,7 +150,7 @@ html {
     padding-left: 2%;
     padding-right: 2%;
     padding-top: 3%;
-    padding-bottom: 6%;
+    padding-bottom: 8%;
     border-radius: 20px;
     position: relative;
     
@@ -238,8 +289,7 @@ html {
     margin-left: 6em;
     margin-top: -3.3em;
 }
-
-
+}
 
 
 

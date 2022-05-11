@@ -6,7 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Munamii Cakery</title>
     <link rel="icon" type="image/x-icon" href="Photos\CupCake.ico">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="index.css">
+    <style>
+        body {
+            animation: fadeInAnimation ease 2s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
 </head>
 <body>
     <video autoplay muted loop id="BckgrVid">
@@ -18,7 +33,7 @@
         <a href="" id="toplink">Contact us</a>
         <a href="" id="toplink">Adress</a>
         <a href="" id="toplink">About us</a>
-        <a class="active" href="#index" id="toplink">Sweets</a>
+        <a class="active" href="sweets.html" id="toplink">Sweets</a>
     </div>
 
     <div class="topcontainer">
@@ -38,31 +53,31 @@
 
     <div class="productsample-container" id="scrolltohere">
         <div class="toptext">
-            <h1>Delicious hits:</h1>
+            <h1>Delicious favourites:</h1>
         </div>
         <div class="row">
-                <div class="favmerch">
-            <img id="sweet" src="Photos\merch\vanilla.png" alt="Vanilla CupCake">
+            <div class="favmerch">
+                <a href=""><img id="sweet" src="Photos\merch\vanilla.png" alt="Vanilla CupCake"></a>
                 <h4 id="sweet-Name">Rêve de vanille coloré</h4>
                 <p id="sweet-text">Some people just love it simple and vanilla.</p>
             </div>
             <div class="favmerch">
-                <img id="sweet" src="Photos\merch\strawberry.png" alt="Strawberry CupCake">
+                <a href=""><img id="sweet" src="Photos\merch\strawberry.png" alt="Strawberry CupCake"></a>
                 <h4 id="sweet-Name">Fraise d'été</h4>
                 <p id="sweet-text">A taste of summer like no other, simply marvelous strawberries.</p>
             </div>
             <div class="favmerch">
-                <img id="sweet" src="Photos\merch\OreoCake.png" alt="Oreo cake">
+                <a href=""><img id="sweet" src="Photos\merch\OreoCake.png" alt="Oreo cake"></a>
                 <h4 id="sweet-Name">Fantasmes d'Oreo</h4>
                 <p id="sweet-text">Sugar brings happiness. Eating it once or twice a week in a dessert, that is what life is about. There is nothing wrong with it.</p>
             </div>
             <div class="favmerch">
-                <img id="sweet" src="Photos\merch\RosePearlCake.png" alt="Rose Pearl Cake">
+                <a href=""><img id="sweet" src="Photos\merch\RosePearlCake.png" alt="Rose Pearl Cake"></a>
                 <h4 id="sweet-Name">Couronne de roses</h4>
                 <p id="sweet-text">Roses are red, the cake is sweet, I think I'll have myself a treat.</p>
             </div>
             <div class="favmerch">
-                <img id="sweet" src="Photos\merch\FeatherCake.png" alt="Feather cake">
+                <a href=""><img id="sweet" src="Photos\merch\FeatherCake.png" alt="Feather cake"></a>
                 <h4 id="sweet-Name">Les ailes du changement</h4>
                 <p id="sweet-text">Follow the Moskva, Down to Gorky Park, Listening to the wind of change!</p>
             </div>
