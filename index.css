@@ -15,45 +15,205 @@ body {
 }
 
 .topnav {
+    overflow: none;
     left: 0;
-    top: 0;
-    padding-left: 15%;
+    height: 200px;
     display: flex;
-    float: left;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
     background-color: white;
     position: fixed;
+    top: 0;
     width: 100%;
-    border-radius: 10px;
+    z-index: 1000;
 }
 
 #toplink {
-    display: inline-block;
+    float: center;
+    text-align: center;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 1%;
     top: 1;
     left: 50%;
     font-family: 'Oleo Script Swash Caps', cursive;
-    font-size: 150%;
+    font-size: 140%;
     text-decoration: none;
     background-color: chocolate;
     color: white;
     border-radius: 10px;
-    padding-left: 5px;
-    padding-right: 5px;
-    margin-top: 20%;
-    margin-left: 1%;
-    margin-right: 1%;
 }
 
 
 .MunamiiLogo {
-    float: right;
-    margin-left: auto;
-    margin-top: 10em;
+    float: center;
     border-radius: 100%;
-    display: absolute;
+    display: flex;
 }
 
 .slideshow {
     display: none;
+}
+
+.topcontainer {
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    margin-top: 50%;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 3%;
+    padding-bottom: 5%;
+    background-color: #fff;
+    scroll-margin-top: 50px;
+}
+
+.top-rightcol {
+    width: 100%;
+    background: rgb(163, 224, 240);
+    border-radius: 20px;
+    justify-content: center;
+}
+
+.maintitle {
+    text-align: center;
+    position: relative;
+    margin-top: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-size: 8vw;
+    color:chocolate;
+}
+
+.biglink a {
+    background-color: hotpink;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 15%;
+    margin-bottom: 15%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    max-width: 100%;
+    min-width: 60%;
+    border-radius: 20px;
+    text-decoration: none;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-size: 5vw;
+    text-align: center;
+    display: block;
+    color: white;
+}
+
+#Gmap {
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+    margin-left: 12%;
+    margin-bottom: 20%;
+}
+
+.productsample-container {
+    display: flexbox;
+    justify-content: center;
+    justify-items: center;
+    border-radius: 20px;
+    margin-top: 3%;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 1em;
+    padding-bottom: 5%;
+    background: rgba(255, 255, 255, 0.5);
+    color: #fff;
+    /* align-content: center; */
+    gap: 4em;
+}
+
+.toptext {
+    text-align: center;
+    position: flex;
+    margin-top: 0;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-size: 120%;
+    color: chocolate;
+    padding-bottom: 1%;
+}
+
+/* .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+} */
+
+.favmerch {
+    overflow: auto;
+    margin-left: 15%;
+    background: rgb(163, 224, 240);
+    width: 70%;
+    height: 20%;
+    align-content: center;
+    text-align: center;
+    border-radius: 20px;
+    transition: all .2s ease-in-out;
+    margin-bottom: 15%;
+}
+
+#sweet {
+    width: 270px;
+    max-width: 100%;
+    margin-top: 10%;
+    border-radius: 20px;
+    aspect-ratio: 270 / 300;
+}
+
+#sweet-Name {
+    color: chocolate;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    margin-top: 5px;
+    font-size: 165%;
+    text-align: center;
+}
+
+#sweet-text {
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-size: 125%;
+    color: chocolate;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: -1em;
+}
+
+.footer {
+    left: 0;
+    display: inline;
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    z-index: 1000;
+}
+
+#FB {
+    height: 80px;
+    width: auto;
+    margin-left: 1em;
+    margin-top: 0.3em;
+}
+
+#INSTA {
+    vertical-align: top;
+    height: 80px;
+    width: auto;
+    margin-left: 7em;
+    margin-top: -5.2em;
 }
 
 }
@@ -69,8 +229,10 @@ body {
 }
 
 .topnav {
+    overflow: none;
     left: 0;
-    display: inline-block;
+    height: 70px;
+    display: flexbox;
     background-color: white;
     position: fixed;
     top: 0;
@@ -80,7 +242,6 @@ body {
 
 #toplink {
     float: right;
-    display: block;
     color: hotpink;
     text-align: center;
     padding: 14px 16px;
