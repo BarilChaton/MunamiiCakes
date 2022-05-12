@@ -18,7 +18,7 @@ body {
     left: 0;
     top: 0;
     padding-left: 15%;
-    /* display: inline-block; */
+    display: flex;
     float: left;
     background-color: white;
     position: fixed;
@@ -27,9 +27,9 @@ body {
 }
 
 #toplink {
+    display: inline-block;
     top: 1;
     left: 50%;
-    display: inline-block;
     font-family: 'Oleo Script Swash Caps', cursive;
     font-size: 150%;
     text-decoration: none;
@@ -42,6 +42,7 @@ body {
     margin-left: 1%;
     margin-right: 1%;
 }
+
 
 .MunamiiLogo {
     float: right;
@@ -85,22 +86,30 @@ body {
     padding: 14px 16px;
     font-size: 200%;
     text-decoration: none;
+    list-style-type: none;
     font-family: 'Oleo Script Swash Caps', cursive;
+    transition: all .2s ease-in-out;
 }
 
 #toplink:hover {
     background: chocolate;
     color: white;
+    border-radius: 20px;
+    transform: scale(1.1)
 }
 
 .MunamiiLogo {
     float: left;
-    border-radius: 100%;
+    border-radius: 50%;
     position: absolute;
+    transition: all .2s ease-in-out;
+}
+
+.MunamiiLogo:hover {
+    transform: scale(1.2);
 }
 
 .topcontainer {
-    display: flex;
     border-radius: 20px;
     margin-top: 10%;
     margin-left: 2%;
@@ -112,75 +121,48 @@ body {
     background: rgba(255, 255, 255, 0.5);
     color: #fff;
     scroll-margin-top: 50px;
+    display: inline-flex;
+    justify-content: space-evenly;
 }
 
 .slideshow {
-    width: 900px;
+    width: 90%;
     height: auto;
     border-radius: 20px;
-    position: absolute;
     border: 10px solid #fff;
 }
 
-#stage a {
-    position: absolute;
-}
-#stage a:nth-of-type(1) {
-    animation-name: fader;
-    animation-delay: 5s;
-    animation-duration: 1s;
-    z-index: 20;
-}
-#stage a:nth-of-type(2) {
-    z-index: 10;
-}
-#stage a:nth-of-type(n+3) {
-    display: none;
-}
-
-@keyframes fader {
-    from { opacity: 1.0; }
-    to { opacity: 0.0; }
-}
-
-
-
 .top-rightcol {
-    margin-right: 7%;
-    margin-left: 60%;
-    /* margin-top: 1%; */
+    width: 100%;
     background: rgb(163, 224, 240);
-    padding-left: 2%;
-    padding-right: 2%;
-    padding-top: 3%;
-    padding-bottom: 8%;
     border-radius: 20px;
-    position: relative;
-    
+    justify-content: center;
 }
 
 .maintitle {
     text-align: center;
     position: relative;
-    float: center;
     margin-top: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
     font-family: 'Oleo Script Swash Caps', cursive;
+    font-size: 3vw;
     color:chocolate;
-    font-size: 400%;
 }
 
 .biglink a {
     background-color: hotpink;
-    display: flex;
     margin-left: 20%;
     margin-right: 20%;
     margin-top: 15%;
     padding-top: 2%;
     padding-bottom: 2%;
+    max-width: 100%;
+    min-width: 60%;
     border-radius: 20px;
     text-decoration: none;
     font-family: 'Oleo Script Swash Caps', cursive;
-    font-size: 200%;
+    font-size: 2vw;
     text-align: center;
     display: block;
     color: white;
@@ -188,6 +170,14 @@ body {
 .biglink a:hover {
     background:chocolate;
     color: white;
+}
+
+#Gmap {
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+    margin-top: 4%;
+    margin-left: 12%;
 }
 
 .productsample-container {
@@ -230,24 +220,27 @@ body {
 }
 
 .favmerch {
+    overflow: auto;
     background: rgb(163, 224, 240);
     width: 17%;
     height: 60%;
     align-content: center;
+    text-align: center;
     border-radius: 20px;
     transition: all .2s ease-in-out;
 }
 
 .favmerch:hover {
     transform: scale(1.2);
+    background: white;
 }
 
 #sweet {
     width: 270px;
-    height: 300px;
-    margin-left: 4.5%;
+    max-width: 100%;
     margin-top: 10%;
     border-radius: 20px;
+    aspect-ratio: 270 / 300;
 }
 
 #sweet-Name {
@@ -285,12 +278,20 @@ body {
     margin-top: 0.3em;
 }
 
+#FB:hover {
+    transform: scale(1.4);
+}
+
 #INSTA {
     vertical-align: top;
     height: 50px;
     width: 50px;
     margin-left: 6em;
     margin-top: -3.3em;
+}
+
+#INSTA:hover {
+    transform: scale(1.4);
 }
 }
 
