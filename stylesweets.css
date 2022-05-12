@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media only screen and (min-width: 768px) {
+#BckgrVid {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+.topnav {
+    left: 0;
+    display: inline-block;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+#toplink {
+    float: right;
+    display: block;
+    color: hotpink;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 200%;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    transition: all .2s ease-in-out;
+}
+
+#toplink:hover {
+    background: chocolate;
+    color: white;
+    border-radius: 20px;
+    transform: scale(1.1)
+}
+
+.MunamiiLogo {
+    float: left;
+    border-radius: 50%;
+    position: absolute;
+    transition: all .2s ease-in-out;
+}
+
+.MunamiiLogo:hover {
+    transform: scale(1.2);
+}
+
+.hero-sweet {
+    display: block;
+    background: rgba(255, 255, 255, 0.5);
+    color: #fff;
+    margin-top: 10%;
+    width: 50em;
+    height: 10em;
+    text-align: center;
+    margin-left: 29%;
+    padding-top: 0.1%;
+    padding-bottom: 0.1%;
+    border-radius: 20px;
+}
+
+#hero-title {
+    font-family: 'Oleo Script Swash Caps', cursive;
+    color: chocolate;
+    font-size: 350%;
+}
+
+/* this is the main part of the page */
+#column-container {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.column-left {
+    display: grid;
+    overflow: scroll;
+    overflow-x: hidden;
+    direction: rtl;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+    justify-items: center;
+    padding-top: 2em;
+    background: rgba(255, 255, 255, 0.5);
+    color: #fff;
+    width: 55em;
+    height: 60em;
+    margin-top: 8.5%;
+    margin-bottom: 8.5%;
+    border-radius: 20px;
+}
+
+.merchleft {
+    position: relative;
+    background: rgb(163, 224, 240);
+    width: 70%;
+    height: auto;
+    align-content: center;
+    text-align: center;
+    border-radius: 20px;
+    transition: all .2s ease-in-out;
+    margin-bottom: 10%;
+}
+
+.merchleft:hover {
+    transform: scale(1.1);
+    background: white;
+}
+
+.column-right {
+    display: grid;
+    overflow: scroll;
+    overflow-x: hidden;
+    direction: ltr;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+    justify-items: center;
+    padding-top: 2em;
+    background: rgba(255, 255, 255, 0.5);
+    color: #fff;
+    width: 55em;
+    height: 60em;
+    margin-top: 8.5%;
+    margin-bottom: 8.5%;
+    border-radius: 20px;
+}
+
+.merchright {
+    position: relative;
+    background: rgb(163, 224, 240);
+    width: 70%;
+    height: auto;
+    align-content: center;
+    text-align: center;
+    border-radius: 20px;
+    transition: all .2s ease-in-out;
+    margin-bottom: 10%;
+}
+
+.merchright:hover {
+    transform: scale(1.1);
+    background: white;
+}
+
+#sweet {
+    width: 160px;
+    max-width: 100%;
+    margin-top: 10%;
+    border-radius: 20px;
+    aspect-ratio: 270 / 300;
+}
+
+#sweet-Name {
+    color: chocolate;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    margin-top: 5px;
+    font-size: 150%;
+    text-align: center;
+}
+
+#sweet-text {
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-size: 115%;
+    color: chocolate;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: -1em;
+}
+
+
+
+/* this is footer part */
+.footer {
+    left: 0;
+    display: inline;
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    z-index: 1000;
+}
+
+#FB {
+    height: 50px;
+    width: 50px;
+    margin-left: 1em;
+    margin-top: 0.3em;
+}
+
+#FB:hover {
+    transform: scale(1.4);
+}
+
+#INSTA {
+    vertical-align: top;
+    height: 50px;
+    width: 50px;
+    margin-left: 6em;
+    margin-top: -3.3em;
+}
+
+#INSTA:hover {
+    transform: scale(1.4);
+}
+}
